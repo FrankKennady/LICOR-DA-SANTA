@@ -54,13 +54,21 @@ const products = [
   {
     id: 7,
     category: "tradicional",
-    name: "Licor de cacau",
+    name: "Licor de Abacaxi",
+    desc: "A essência do fruto. Um licor de sabor vibrante e tropical, que ressalta a complexidade e a doçura da fruta madura. Uma escolha perfeita para quem aprecia o equilíbrio entre o frescor cítrico e um final de boca intensamente aromático.",
+    price: 25.00,
+    img: "./assets/licor-de-abacaxi.png"
+  },
+  {
+    id: 8,
+    category: "tradicional",
+    name: "Licor de Cacau",
     desc: "A essência do fruto. Um licor de sabor profundo e marcante, que ressalta a complexidade do cacau puro. Uma escolha clássica para quem aprecia o equilíbrio entre a força do fruto e um final de boca aveludado.",
     price: 25.00,
     img: "./assets/cacau-tra.png"
   },
   {
-    id: 8,
+    id: 9,
     category: "tradicional",
     name: "Licor de Jenipapo",
     desc: "O sabor do interior. Uma das pérolas da nossa doçaria artesanal. O jenipapo confere a este licor uma cor e um aroma inconfundíveis, com um sabor autêntico e persistente que celebra a nossa cultura.",
@@ -68,15 +76,15 @@ const products = [
     img: "./assets/jenipapo-tra.png"
   },
   {
-    id: 9,
+    id: 10,
     category: "tradicional",
-    name: "Licor de limão",
+    name: "Licor de Limão",
     desc: "Refrescância e vivacidade. Com um aroma cítrico e vibrante, este licor é a definição de equilíbrio. Limpo, leve e extremamente refrescante, é a dose perfeita para limpar o paladar e encerrar uma refeição com elegância.",
     price: 25.00,
     img: "./assets/limao-tra.png"
   },
   {
-    id: 10,
+    id: 11,
     category: "tradicional",
     name: "Licor de Rola",
     desc: "O calor das especiarias. Uma receita que abraça o paladar. A união aromática do cravo e da canela cria um licor quente, perfumado e reconfortante. É a escolha ideal para noites frias ou para quem busca um sabor mais intenso e especiado.",
@@ -84,7 +92,7 @@ const products = [
     img: "./assets/rola.png"
   },
   {
-    id: 11,
+    id: 12,
     category: "tradicional",
     name: "Licor de Tamarindo",
     desc: "Personalidade agridoce. Um licor exótico e inesquecível. O tamarindo traz uma acidez característica que harmoniza perfeitamente com a doçura do licor, resultando em uma bebida de sabor único, complexo e extremamente viciante.",
