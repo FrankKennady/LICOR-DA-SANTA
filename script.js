@@ -203,8 +203,8 @@ function sendWhatsApp() {
     document.getElementById("payment-method")?.value || "Não informado";
 
   let msg = "*Pedido — Licor da Santa*\n";
-    msg += `*Retirada:* Rua Nélio Gomes, Nº 96, Santa Inês - Ba \n\n`;
- 
+  msg += `*Retirada:* Rua Nélio Gomes, Nº 96, Santa Inês - Ba \n\n`;
+
   cart.forEach(item => {
     msg += `• ${item.qty}x ${item.name} — R$ ${(item.price * item.qty)
       .toFixed(2)
@@ -229,14 +229,15 @@ function sendWhatsApp() {
       "\n\nOlá! Gostaria de realizar este pedido e farei o pagamento no cartão.";
   }
 
- 
+
 
   const whatsappNumber = "5573988920953";
 
   const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
-
   window.open(url, "_blank");
+  clearCart();
 }
+
 // ===== FILTRO DE CATEGORIA =====
 function filterCategory(category, btn) {
   document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
@@ -302,7 +303,7 @@ window.addEventListener("scroll", () => {
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Buscamos o elemento primeiro
   const grid = document.getElementById("products-grid");
-  
+
   // 2. Só chamamos a função se o elemento existir na página
   if (grid) {
     renderProducts(products, grid);
